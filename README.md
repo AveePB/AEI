@@ -1,10 +1,13 @@
-# AEI Repository
+# AEI Repository ![AEI Logo](aei-logo.png)
+
+<img src="static/aei-logo.png" alt="AEI Logo" align="right" width="100"/>
 
 ## Table of Contents
 - [What's AEI?](#whats-aei)
 - [Repository Description](#repository-description)
-- [Structure of the Repository](#repository-structure)
+- [Structure of the Repository](#structure-of-the-repository)
 - [License](#license)
+- [MIT License](#mit-license)
 
 ## What's AEI?
 The **Faculty of Automatic Control, Electronics, and Computer Science (AEI)** at the **Silesian University of Technology** is one of the most renowned faculties in Poland, offering cutting-edge education in fields such as **automation**, **electronics**, **robotics**, **artificial intelligence**, and **computer science**. AEI is widely recognized for its practical approach to problem-solving, strong industry connections, and advanced research projects.
@@ -16,7 +19,7 @@ This repository contains a set of tasks and projects based on real-world problem
 
 Feel free to explore the code and utilize it as a reference for tackling similar problems or preparing for exams!
 
-### Structure of the Repository
+## Structure of the Repository
 - **Algorithms and Data Structures**: Efficient solutions to complex problems.
 - **Turtle Graphics**: Back-end and front-end projects using modern web frameworks.
 - **AI and Machine Learning**: Practical implementations of AI/ML algorithms.
@@ -24,7 +27,7 @@ Feel free to explore the code and utilize it as a reference for tackling similar
 ## License
 This project is licensed under the **MIT License**. 
 
-### MIT License
+## MIT License
 The MIT License is a permissive free software license that allows reuse of the code for any purpose, as long as the original license is included. You are free to:
 - Use the code for personal or commercial purposes
 - Modify, distribute, and sublicense it
