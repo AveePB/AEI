@@ -1,4 +1,4 @@
-# AEI Repository ![AEI Logo](static/aei-logo.png)
+# AEI Repository
 
 <img src="static/aei-logo.png" alt="AEI Logo" align="right" width="100"/>
 
