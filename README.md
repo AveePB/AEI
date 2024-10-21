@@ -1,4 +1,4 @@
-# AEI Repository ![AEI Logo](aei-logo.png)
+# AEI Repository ![AEI Logo](static/aei-logo.png)
 
 <img src="static/aei-logo.png" alt="AEI Logo" align="right" width="100"/>
 
@@ -21,7 +21,7 @@ Feel free to explore the code and utilize it as a reference for tackling similar
 
 ## Structure of the Repository
 - **Algorithms and Data Structures**: Efficient solutions to complex problems.
-- **Turtle Graphics**: Back-end and front-end projects using modern web frameworks.
+- **Turtle Graphics**: Set of python scripts drawing shapes and lines.
 - **AI and Machine Learning**: Practical implementations of AI/ML algorithms.
 
 ## License
