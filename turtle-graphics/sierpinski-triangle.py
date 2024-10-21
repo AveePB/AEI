@@ -16,7 +16,7 @@ def draw_triangle(side):
 
 # Set center position
 t.penup(); t.goto((-100, t.ycor())); t.pendown()
-t.speed(10)
+t.speed(0)
 
 # Run turtle
 draw_triangle(200)
