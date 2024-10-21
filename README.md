@@ -1,6 +1,6 @@
 # AEI Repository
 
-<img src="static/aei-logo.png" alt="AEI Logo" align="right" width="100"/>
+<img src="static/aei-logo.png" alt="AEI Logo" align="right" width="250"/>
 
 ## Table of Contents
 - [What's AEI?](#whats-aei)
