@@ -1,5 +1,8 @@
 import turtle
 
+# Constants
+SIZE = 200
+
 # Objects
 t = turtle.Turtle()
 
@@ -24,5 +27,5 @@ t.penup(); t.setpos(-100, -100); t.pendown()
 t.speed(0); t.width(2)
 
 # Run turtle
-draw_square(200, True)
+draw_square(SIZE, True)
 turtle.done()

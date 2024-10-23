@@ -1,5 +1,8 @@
 import turtle
 
+# Constants
+SIZE = 200
+
 # Objects
 t = turtle.Turtle()
 
@@ -14,9 +17,10 @@ def draw_triangle(size: int):
         t.right(120)
 
 # Set up a turtle
-t.penup(); t.goto((100, t.ycor())); t.pendown()
+t.penup(); t.goto((100, -100)); t.pendown()
 t.speed(0); t.left(180); t.width(2)
 
 # Run turtle
-draw_triangle(200)
+draw_triangle(SIZE)
+t.forward(SIZE)
 turtle.done()

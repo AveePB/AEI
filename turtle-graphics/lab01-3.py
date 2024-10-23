@@ -1,5 +1,8 @@
 import turtle
 
+# Constants
+SIZE = 120
+
 # Objects
 t = turtle.Turtle()
 
@@ -26,5 +29,5 @@ t.penup(); t.setpos(0, -300); t.pendown()
 t.left(75); t.speed(0); t.width(2)
 
 # Run turtle
-draw_branch(130, turn_left=True)
+draw_branch(SIZE, turn_left=True)
 turtle.done()
