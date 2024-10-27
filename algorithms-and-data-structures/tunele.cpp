@@ -31,6 +31,7 @@ int main() {
         else 
             indices[t[ptr+1]] =  i;
     }
+    
     // Load cars
     for (int i=1; i<=b; i++) {
         int car, max_height;
