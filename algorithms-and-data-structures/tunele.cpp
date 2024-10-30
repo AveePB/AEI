@@ -1,8 +1,10 @@
 #include <iostream>
 #include <map>
 
-const int MAX_SIZE = 1e5 + 7;
+const int MAX_SIZE = 5e5 + 7;
 const int INF = 1e9 + 7;
+
+int revBinSearch(int* t, int n, int car);
 
 // https://szkopul.edu.pl/problemset/problem/OCCMf-wmXSSDpoa6G54rwXwV/site/?key=statement
 int main() {
@@ -12,42 +14,41 @@ int main() {
     std::cin.tie(0);
 
     // Variables
-    std::map<int, int> indices; indices.insert({INF, 0});
-    int* t = new int[MAX_SIZE]; t[0] = INF;
-    int a = 0, b = 0, ptr = 0;
+    int a, b, c, t[MAX_SIZE]; t[0] = INF;
 
-    // Input
+    // Input 
     std::cin >> a >> b;
 
-    // Load tunels
-    for (int i=1; i<=a; i++) {
-        // Get required height
-        std::cin >> t[ptr+1];
-        t[ptr+1] = std::min(t[ptr+1], t[ptr]);
-
-        // Save tunnel index
-        if (indices.find(t[ptr+1]) == indices.end())
-            indices[t[++ptr]] = i;
-        else 
-            indices[t[ptr+1]] =  i;
+    // Load tunnels
+    for (int i=0; i<a; i++) {
+        std::cin >> t[i+1];
+        t[i+1] = std::min(t[i+1], t[i]);
     }
-    
-    // Load cars
-    for (int i=1; i<=b; i++) {
-        int car, max_height;
-        std::cin >> car;
-    
-        // Drive through highway
-        for (int i=0; i<=ptr; i++) {
-            // Car cannot fit into tunnel
-            if (car >= t[i]) break;
 
-            // Car fits into tunnel
-            max_height = t[i];
-        }
-        std::cout << indices.at(max_height) << ' ';
+    // Handle queries
+    for (int i=0; i<b; i++) {
+        std::cin >> c;
+        std::cout << revBinSearch(t, a+1, c) - 1 << ' ';
     }
-    delete [] t;
 
     return 0;
+}
+
+int revBinSearch(int* t, int n, int target) {
+    int low = 0, high = n-1, ans = 0;
+
+    while (low <= high) {
+        int mid = (low + high) / 2;
+
+        // Car doesn't fit into tunnel
+        if (t[mid] <= target) {
+            high = mid - 1;
+        }
+        // Car fits into tunnel
+        else {
+            low = mid + 1;
+        }
+    }
+
+    return low;
 }
