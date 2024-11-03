@@ -2,6 +2,7 @@ import turtle
 
 # Constants
 SIZE = 120
+DEGREE = 15
 
 # Objects
 t = turtle.Turtle()
@@ -11,8 +12,8 @@ def draw_branch(size: int, turn_left: bool):
     if (size < 10): return
 
     # Draw branch
-    if (turn_left): t.left(15)
-    else: t.right(15)
+    if (turn_left): t.left(DEGREE)
+    else: t.right(DEGREE)
     t.forward(size)
 
     # Draw children
@@ -21,12 +22,12 @@ def draw_branch(size: int, turn_left: bool):
     
     # Go back
     t.backward(size)
-    if (turn_left): t.right(15)
-    else: t.left(15)
+    if (turn_left): t.right(DEGREE)
+    else: t.left(DEGREE)
 
 # Set up turtle
 t.penup(); t.setpos(0, -300); t.pendown()
-t.left(75); t.speed(0); t.width(2)
+t.left(90-DEGREE); t.speed(0); t.width(2)
 
 # Run turtle
 draw_branch(SIZE, turn_left=True)
