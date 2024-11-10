@@ -28,4 +28,5 @@ t.speed(0); t.width(2)
 
 # Run turtle
 draw_square(SIZE, True)
+t.left(90)
 turtle.done()

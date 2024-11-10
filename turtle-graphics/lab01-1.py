@@ -23,4 +23,5 @@ t.speed(0); t.left(180); t.width(2)
 # Run turtle
 draw_triangle(SIZE)
 t.forward(SIZE)
+t.right(120)
 turtle.done()

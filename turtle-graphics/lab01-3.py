@@ -1,7 +1,7 @@
 import turtle
 
 # Constants
-SIZE = 120
+SIZE = 80
 DEGREE = 15
 
 # Objects
