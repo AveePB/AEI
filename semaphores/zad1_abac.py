@@ -15,39 +15,34 @@ def printA(ntimes):
     """Function printing A"""
     for _ in range(ntimes):
         semA.acquire()
-
-        semA.acquire()
-        print('A ', end="")
-
-        semB.release()
-        time.sleep(1)
-
+        print('A', end="")
+        semC.release()
 
 def printB(ntimes):
     """Function printing B"""
     for _ in range(ntimes):
         semB.acquire()
-        print('B', end="")
 
-        semC.release()
-        semC.release()
+        semA.release()
         time.sleep(1)
-
+                
+        print('B', end="")
+        semA.release()
 
 def printC(ntimes):
     """Function printing C"""
     for _ in range(ntimes):
         semC.acquire()
-        print('C', end="")
+        semC.acquire()
 
-        semA.release()
-        time.sleep(2)
+        print('C ', end="")
+        semB.release()
 
 how_many = 10
 threads = [
-    Thread(target=printA, args=(how_many,)), 
+    Thread(target=printA, args=(2*how_many,)), 
     Thread(target=printB, args=(how_many,)), 
-    Thread(target=printC, args=(2*how_many,)),
+    Thread(target=printC, args=(how_many,)),
 ]
 
 for thread in threads:
