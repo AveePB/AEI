@@ -1,0 +1,37 @@
+Zad 1
+Przesyły międzyrejestrowe.
+
+1) |(AK)| -> (L)
+wyl wea wyak wes;
+Jeżeli Z=1:
+	wys weja ode weak;
+	wys weja ode weak;
+	wyak wes; 
+	pisz;
+W przeciwnym wypadku:
+	pisz;
+
+2) ((Ad)) + ((Ad)+1) -> Ak
+wyad wel wea;
+czyt wys weja przep weak il;
+wyl wea;
+czyt wys weja dod weak;
+
+Zad 2
+Rozkazy dla maszyny W(1) oraz W+(2).
+
+1) SNZ jeżeli (Ak) != 0, to (Ad) -> L, w przeciwnym razie (L) + 1 -> L
+// skok gdy (AK) != 0
+ROZKAZ SNZ;
+czyt wys wei il;
+JEZELI zak TO @zero GDY NIE @niezero;
+@niezero wyad wea wel KONIEC;
+@zero wyl wea;
+
+2) DDP (Ak) + (((Ad))) -> Ak
+// ddp
+ROZKAZ DDP;
+czyt wys wei il;
+wyad wea;
+czyt wys sa wea;
+czyt wys weja dod weak wyl wea;
