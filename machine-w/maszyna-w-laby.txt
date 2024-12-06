@@ -19,6 +19,7 @@ czyt wys weja dod weak;
 
 Zad 2
 Rozkazy dla maszyny W(1) oraz W+(2).
+// Zawartość PaO to 287(1000 11111)
 
 1) SNZ jeżeli (Ak) != 0, to (Ad) -> L, w przeciwnym razie (L) + 1 -> L
 // skok gdy (AK) != 0
