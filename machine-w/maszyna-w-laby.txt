@@ -2,19 +2,37 @@ Zad 1
 Przesyły międzyrejestrowe.
 
 1) |(AK)| -> (L)
+// (L) -> A, (AK) -> S
 wyl wea wyak wes;
+
 Jeżeli Z=1:
+	// (AK) - (S) -> AK
 	wys weja ode weak;
+	
+	// (AK) - (S) -> AK
 	wys weja ode weak;
-	wyak wes; 
+	
+	// (AK) -> S
+	wyak wes;
+	
+	// (AK) -> (L) 
 	pisz;
+
 W przeciwnym wypadku:
+	// (AK) -> (L)
 	pisz;
 
 2) ((Ad)) + ((Ad)+1) -> Ak
+// (Ad) -> L, A
 wyad wel wea;
+
+// (S) -> AK, (L) + 1 -> L 
 czyt wys weja przep weak il;
+
+// (L) -> A
 wyl wea;
+
+// (S) + (Ak) -> Ak
 czyt wys weja dod weak;
 
 Zad 2
