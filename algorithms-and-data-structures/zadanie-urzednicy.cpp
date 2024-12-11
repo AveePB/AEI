@@ -2,7 +2,7 @@
 
 const int N = 1e6+7;
 
-// 
+// https://szkopul.edu.pl/problemset/problem/cSV0kK7zLib42_NGIA7DvOoZ/site/?key=statement
 int main() {
     // Speed boosters
     std::ios_base::sync_with_stdio(0);
@@ -21,7 +21,7 @@ int main() {
         arr[i]--;
     }
 
-    // Go through bosses
+    // Go through company employees
     for (int i=n-1; i>0; i--) {
         // Update boss's employee count
         if (dp[i] == 0) {
