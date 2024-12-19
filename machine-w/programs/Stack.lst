@@ -17,7 +17,7 @@ Nazwa1=stp
 Nazwa2=dod
 Nazwa3=ode
 Nazwa4=pob
-Nazwa5=³ad
+Nazwa5=lad
 Nazwa6=sob
 Nazwa7=som
 Nazwa8=soz
@@ -53,10 +53,10 @@ Linia2=ROZKAZ POB;
 Linia3=czyt wys wei il;
 Linia4=wyad wea;
 Linia5=czyt wys weja przep weak wyl wea;
-[³ad]
+[lad]
 Linie=5
 Linia1=// (Ak)->(Ad)
-Linia2=ROZKAZ £AD;
+Linia2=ROZKAZ LAD;
 Linia3=czyt wys wei il;
 Linia4=wyad wea wyak wes;
 Linia5=pisz wyl wea;
@@ -72,7 +72,7 @@ Linie=6
 Linia1=// skok gdy (AK) < 0
 Linia2=ROZKAZ SOM;
 Linia3=czyt wys wei il;
-Linia4=JE¯ELI Z TO @ujemne GDY NIE @dodatnie;
+Linia4=JEZELI Z TO @ujemne GDY NIE @dodatnie;
 Linia5=@ujemne wyad wea wel KONIEC;
 Linia6=@dodatnie wyl wea;
 [soz]
@@ -80,7 +80,7 @@ Linie=6
 Linia1=// skok gdy (AK) = 0
 Linia2=ROZKAZ SOZ;
 Linia3=czyt wys wei il;
-Linia4=JE¯ELI zak TO @zero GDY NIE @niezero;
+Linia4=JEZELI zak TO @zero GDY NIE @niezero;
 Linia5=@zero wyad wea wel KONIEC;
 Linia6=@niezero wyl wea;
 [dns]
