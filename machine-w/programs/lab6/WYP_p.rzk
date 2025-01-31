@@ -1,4 +1,4 @@
-// WYP - wypisanie znaku znajdujšcego się w akumulatorze na UZ o numerze podanym jako argument rozkazu
+// WYP - wypisanie znaku znajdujacego się w akumulatorze na UZ o numerze podanym jako argument rozkazu
 ROZKAZ WYP;
 czyt wys wei il;
 
