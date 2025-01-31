@@ -1,10 +1,19 @@
-// wczytanie znaku z UZ o numerze podanym jako argument rozkazu
+// WPR - wczytanie znaku z UZ o numerze podanym jako argument rozkazu
 ROZKAZ WPR;
 czyt wys wei il;
+
+// Do RP trafia wartosc reprezentujaca przerwanie
 start wyak weja ode weak eni;
-@czekaj JE¯ELI INT TO @przerw GDY NIE @norm;
-@norm wyg weja ode weak JE¯ELI Z to @dalej GDY NIE @czekaj;
+
+// Sprawdzenie czy przerwanie zostalo przyjete
+@czekaj JEÅ»ELI INT TO @przerw GDY NIE @norm;
+@norm wyg weja ode weak JEÅ»ELI Z to @dalej GDY NIE @czekaj;
 @dalej wyrb weja przep weak wyl wea KONIEC;
 @przerw wyrb weja przep weak dws;
+
+// Przeslanie zawartosci licznika do rejestru S i wprowadzenie do rejestru A zawartosci wskaznika stosu
 wyls wes wyws wea;
+
+// Pobranie daresu procedury obslugi przerwaniua (z AP) i wprowadzenie go do licznika i rejestru A
 pisz wyap wea wel rint;
+// Na samym koncu jest reset ukladu przerwan, aby nastepny rozkaz dzialal poprawnie
