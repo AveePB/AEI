@@ -4,6 +4,7 @@ czyt wys wei il;
 
 // Do RP trafia wartosc reprezentujaca przerwanie
 wyak weja ode weak wes werb start eni;
+
 @czekaj JEŻELI INT TO @przerw GDY NIE @norm;
 @norm wyg weja ode weak JEŻELI Z to @dalej GDY NIE @czekaj;
 @dalej wys weja przep weak wyl wea KONIEC;
