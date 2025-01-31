@@ -16,3 +16,4 @@ wyls wes wyws wea;
 
 // Pobranie daresu procedury obslugi przerwaniua (z AP) i wprowadzenie go do licznika i rejestru A
 pisz wyap wea wel rint;
+// Na samym koncu jest reset ukladu przerwan, aby nastepny rozkaz dzialal poprawnie
