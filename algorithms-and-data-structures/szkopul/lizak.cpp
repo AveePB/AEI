@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 const int MAX_VAL = 2e6 + 7;
 const int MAX_SIZE = 1e6 + 7;
