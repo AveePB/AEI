@@ -19,7 +19,7 @@ void findMaxRevParityRange(int* arr, int size, int totalSum, int& lPtr, int& rPt
 /**
  * @brief Creates all possible numbers from v (in given parity).
  * @param m the map of answers.
- * @param v the vector of numbers.
+ * @param arr the array of numbers.
  * @param l the left pointer.
  * @param r the right pointer.
  * @param sum the current sum.
@@ -65,7 +65,6 @@ int main() {
     findMaxRevParityRange(arr, nSegments+1, totalSum, l, r, sum);
 
     // Discover all possible numbers
-    
     remember(ans, arr, 1, nSegments, totalSum);
     if (l != -1 && r != -1 && sum > 0) remember(ans, arr, l, r, sum);
 
@@ -129,7 +128,7 @@ void findMaxRevParityRange(int* arr, int size, int totalSum, int& lPtr, int& rPt
 }
 
 void remember(std::pair<int, int>* ans, int* arr, int l, int r, int sum) {
-    // Go through vector
+    // Go through array
     while (l <= r) {
         // Save answer
         ans[sum] = { l, r };
