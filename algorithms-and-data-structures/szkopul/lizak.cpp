@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
 
 const int MAX_VAL = 2e6 + 7;
 const int MAX_SIZE = 1e6 + 7;
