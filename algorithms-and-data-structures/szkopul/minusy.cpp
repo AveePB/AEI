@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <string.h>
+
 const int MAX_LEN = 1e6 + 7;
 
 // https://szkopul.edu.pl/problemset/problem/POAyCWzUB990_g4_MA4GF9Jw/site/?key=statement
